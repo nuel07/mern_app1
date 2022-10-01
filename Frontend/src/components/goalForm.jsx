@@ -18,7 +18,7 @@ function goalForm() {
     }
     return (
         <section className='form'>
-            <form onSubmit={onSubmit}></form>
+            <form onSubmit={onSubmit}>
             <div className="form-group">
                 <label htmlFor="text">Goal</label>
                 <input type="text" name='text' id='text' value={text}
@@ -27,6 +27,7 @@ function goalForm() {
             <div className="form-group">
                 <button className="btn btn-block" type='Submit'>Add Goal</button>
             </div>
+            </form>
         </section>
     )
 }
